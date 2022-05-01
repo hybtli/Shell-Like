@@ -21,10 +21,12 @@ For any other commands, your shell-like program should consider them as system c
 a child process using fork system call, and the child process executes the command by using execvp() function ( You can assume that
 the command does not include a pathname ).
   
-          •    You need to handle both foreground and background processes for system commands. When a process runs in foreground,
-               your program should wait for the task to complete, then immediately prompt the user for another command. A background
-               process is indicated by placing an ampersand (’&’) character at the end of an input line. When a process run in
-               background, your program should not wait for the task to complete, but immediately prompt the user for another command. 
+          •    You need to handle both foreground and background processes for system commands.
+               When a process runs in foreground, your program should wait for the task to complete,
+               then immediately prompt the user for another command. A background process is indicated
+               by placing an ampersand (’&’) character at the end of an input line. When a process run
+               in background, your program should not wait for the task to complete, but immediately
+               prompt the user for another command. 
   
           •    You are not allowed to use system() function.
  
